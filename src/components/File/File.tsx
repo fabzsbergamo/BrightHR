@@ -1,6 +1,6 @@
 import './File.css'
-import type { File as FileProps } from "../types"
-import Icon from './Icon/Icon';
+import type { File as FileProps } from "../../types"
+import Icon from '../Icon/Icon';
 
 function File({type, name, added }: FileProps) {
   

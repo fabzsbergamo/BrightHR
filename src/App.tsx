@@ -1,5 +1,6 @@
 import './App.css'
-import File from './components/File'
+import File from './components/File/File'
+import Folder from './components/Folder/Folder'
 import { FileData } from './types'
 
 interface AppProps {
@@ -10,15 +11,16 @@ function App({data}: AppProps) {
 
   return (
     <>
-     <h1>Hello World</h1>
-     <div>
+     <h1>BrightHR files</h1>
       {data.map((item) => (
-        <File
+        item.type === "folder" ? ( 
+        <Folder type={item.type} name={item.name} files={item.files} />
+        ):(
+          <File 
           name={item.name}
           added={item.added} 
           type={item.type}/>
-      ))}
-     </div>
+      )))}
     </>
   )
 }

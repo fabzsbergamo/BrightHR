@@ -1,6 +1,6 @@
 export type FileType = "pdf" | "doc" | "csv" | "mov" | "folder" | undefined | string
 
-export type FileData = File[]
+export type FileData = (File | Folder)[]
 
 export interface File {
     type: FileType 

@@ -1,5 +1,6 @@
 import { FaFilePdf, FaDochub, FaFileCsv, FaFilm, FaFileCircleQuestion } from "react-icons/fa6"
 import { FileType } from "../../types"
+import { FaFolder } from "react-icons/fa"
 
 
 interface IconProps {
@@ -16,6 +17,8 @@ function Icon({type}: IconProps) {
             return <FaFileCsv/>
         case 'mov':
             return <FaFilm/>
+        case 'folder':
+            return <FaFolder/>
         default: 
             return <FaFileCircleQuestion/>
     }

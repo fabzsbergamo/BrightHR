@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { it, describe, expect} from "vitest";
 
 import { File as FileProps } from "../../types"
-import File from "../../components/File"
+import File from "../../components/File/File"
 
 describe("File Component", () => {
 
