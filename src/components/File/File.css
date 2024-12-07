@@ -1,5 +1,36 @@
 .file {
     display: flex;
-    gap: 4px;
     align-items: center;
+    gap: 8px;
+    padding: 8px 12px; 
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    width: 320px; 
+    height: 50px;  
+    min-height: 50px;
+}
+
+.file:hover {
+    background-color: #eaeaea; 
+    box-shadow: 0 4px 6px rgba(20, 99, 209, 0.1); 
+    cursor: pointer; 
+}
+
+.file > span {
+    font-size: 14px;
+    color: #333; 
+    font-weight: bold; 
+}
+
+
+.file svg {
+    width: 20px; 
+    height: 20px;
+    fill: #555; 
+}
+
+.file:hover svg {
+    fill: #0073e6;
 }
